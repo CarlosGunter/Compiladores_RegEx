@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="email">Correo:</label><br>
+        <input type="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required']" id="email" name="email"><br>
+        <label for="pwd">Contraseña:</label><br>
+        <input type="password" pattern="(?=.*\W.*\W).{8,10}" id="pwd" name="pwd"><br>
+        <label for="date">Fecha:</label><br>
+        <input type="date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d{2}$" required id="date" name="date"><br>
+        <label for="age">Edad:</label><br>
+        <input type="number" pattern="^(0[1-9]|[1-9][0-9])$" required id="age" name="age" min="1"><br>
+        <label for="phone">Teléfono:</label><br>
+        <input type="tel" pattern="^\d{10}$" id="phone" name="phone">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
